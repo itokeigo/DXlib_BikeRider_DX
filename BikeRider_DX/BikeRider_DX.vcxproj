@@ -89,6 +89,8 @@
   <!-- ソースファイル -->
   <ItemGroup>
     <ClCompile Include="Game\PlayScene\PlayScene.cpp" />
+    <ClCompile Include="Game\TitleScene\MojiWave.cpp" />
+    <ClCompile Include="Game\TitleScene\TitleRogo.cpp" />
     <ClCompile Include="Game\TitleScene\TitleScene.cpp" />
     <ClCompile Include="Libraries\GameLibrary\GameLibFade.cpp" />
     <ClCompile Include="Libraries\GameLibrary\GameLibSprite.cpp" />
@@ -105,6 +107,11 @@
   <ItemGroup>
     <ClInclude Include="Game\IScene.h" />
     <ClInclude Include="Game\PlayScene\PlayScene.h" />
+    <ClInclude Include="Game\TitleScene\MojiWave.h" />
+    <ClInclude Include="Game\TitleScene\TitleRogo.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="Game\TitleScene\TitleScene.h" />
     <ClInclude Include="Game\Utility.h" />
     <ClInclude Include="Libraries\GameLibrary\GameLibFade.h" />

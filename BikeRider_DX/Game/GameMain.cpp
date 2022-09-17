@@ -56,6 +56,11 @@ void GameMain::UpdateGame()
 
 void GameMain::RenderGame()
 {
+	int mFrame = 10;
+	//”wŒi‚Ì•`‰æ
+	DrawBox(0, 0, SCREEN_RIGHT, SCREEN_HEIGHT, GetColor(0, 0, 0), true);
+	DrawBox(0 + mFrame, 0 + mFrame, SCREEN_RIGHT - mFrame, SCREEN_HEIGHT - mFrame, GetColor(255, 255, 255), true);
+
 	//•`‰æ
 	if (mpScene != nullptr)
 	{

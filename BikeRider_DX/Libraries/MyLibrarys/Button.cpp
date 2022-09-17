@@ -46,7 +46,7 @@ Button::BUTTON_STATE Button::ChackeButton()
 
     //ボタンの範囲内判定
     bool isX = x > mButtonPos.x && x < mButtonPos.x + mButtonSize.x;
-    bool isY = y > mButtonPos.y && y < mButtonPos.y + mButtonSize.y;
+    bool isY = y > mButtonPos.y && y < mButtonPos.y + mButtonSize.y+ mOverHigh;
 
     // ボタンの範囲内か
     if (isX&&isY)

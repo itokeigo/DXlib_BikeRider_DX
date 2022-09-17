@@ -10,6 +10,7 @@
 #include "../IScene.h"
 
 class Button;
+class TitleRogo;
 class TitleScene : public IScene
 {
 	enum eButtonName
@@ -21,7 +22,7 @@ class TitleScene : public IScene
 private:
 
 	Button* mpButton[eButtonName::Num];
-
+	TitleRogo* mpRogo;
 public:
 
 	TitleScene();
