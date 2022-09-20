@@ -17,6 +17,7 @@ Player::~Player()
 void Player::Initialize()
 {
 	mPosition = Float2(200, 100);
+	mJumpVel = 0;
 }
 
 void Player::Update()
@@ -67,10 +68,31 @@ void Player::Movement(int vel)
 void Player::MoveJump()
 {
 	auto key = InputKey::GetInstance();
-	mPosition.mY += 10;
-	if(key->InputChackKey(CheckHitKey(KEY_INPUT_SPACE))==eKEY_STATE::PUSH)
-		mPosition.mY -= 50;
+	static float vel=10;
+	if (!mIsJump && key->InputChackKey(CheckHitKey(KEY_INPUT_SPACE)) == eKEY_STATE::PUSH)
+	{
+		mJumpVel = 20;
+		vel = 10;
+		mIsJump = true;
+	}
 
-	if (mPosition.mY > SCREEN_HEIGHT-100)
-		mPosition.mY = SCREEN_HEIGHT - 100;
+	
+
+	if (mJumpVel > 0.01)
+	{
+		mPosition.mY -= mJumpVel;
+		mJumpVel *= 0.85;
+	}
+	else
+	{
+		mPosition.mY += vel;
+		vel += vel;
+		if (mPosition.mY > SCREEN_HEIGHT-100)
+		{
+			mIsJump = false;
+			mPosition.mY = SCREEN_HEIGHT - 100;
+		}
+	}
+
+	
 }

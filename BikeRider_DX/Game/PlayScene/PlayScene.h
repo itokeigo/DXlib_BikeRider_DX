@@ -9,12 +9,13 @@
 
 #include "../IScene.h"
 class Player;
+class BackGround;
 class PlayScene : public IScene
 {
 private:
 	// ƒvƒŒƒCƒ„[
 	Player* mpPlayer;
-
+	BackGround* mpBG;
 
 public:
 

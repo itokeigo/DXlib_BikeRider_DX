@@ -103,6 +103,9 @@
     <ClCompile Include="Game\Collsion\Collision.cpp">
       <Filter>ライブラリ\MyLibrary\Collision</Filter>
     </ClCompile>
+    <ClCompile Include="Game\BackGround.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <!-- ヘッダファイル -->
   <ItemGroup>
@@ -165,6 +168,9 @@
     </ClInclude>
     <ClInclude Include="Libraries\MyLibrarys\InputKey.h">
       <Filter>ライブラリ\MyLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\BackGround.h">
+      <Filter>Game</Filter>
     </ClInclude>
   </ItemGroup>
   <!-- リソースファイル -->

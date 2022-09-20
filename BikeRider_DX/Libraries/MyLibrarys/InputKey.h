@@ -1,6 +1,6 @@
 #pragma once
 
-enum eKEY_STATE
+enum class eKEY_STATE
 {
     NONE,
     PUSH,
@@ -36,15 +36,15 @@ public:
         }
         else if (mIsKeyPush && !mIsKeyDown && key)
         {
-            mIsKeyDown = true;
             return eKEY_STATE::DOWN;
         }
-        else if (mIsKeyPush && mIsKeyDown && !key)
+        else if (mIsKeyPush && !key)
         {
-            mIsKeyPush = false;
-            mIsKeyDown = false;
+             mIsKeyPush = false;
+            mIsKeyDown = true;
             return eKEY_STATE::RELEAS;
         }
+        mIsKeyDown = false;
         return eKEY_STATE::NONE;
     }
 };

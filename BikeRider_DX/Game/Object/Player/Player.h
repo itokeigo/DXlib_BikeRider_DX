@@ -15,6 +15,11 @@ private:
     // 画像ハンドル
     int mHandle;
 
+    // ジャンプの速度
+    int mJumpVel;
+    // ジャンプフラグ
+    bool mIsJump;
+    
     // 位置
     Float2 mPosition;
     
