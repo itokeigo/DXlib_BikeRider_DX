@@ -48,6 +48,12 @@
       <UniqueIdentifier>{e70a2ff4-85b3-4acd-a429-b908f1125170}</UniqueIdentifier>
       <Extensions>dft</Extensions>
     </Filter>
+    <Filter Include="Game\object">
+      <UniqueIdentifier>{2a60170a-17f3-4056-b84a-c8ffa92947a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\object\player">
+      <UniqueIdentifier>{02cac733-f826-409d-a559-63756b697718}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <!-- ソースファイル -->
   <ItemGroup>
@@ -90,6 +96,12 @@
     </ClCompile>
     <ClCompile Include="Game\TitleScene\MojiWave.cpp">
       <Filter>Game\TitleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Player\Player.cpp">
+      <Filter>Game\object\player</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Collsion\Collision.cpp">
+      <Filter>ライブラリ\MyLibrary\Collision</Filter>
     </ClCompile>
   </ItemGroup>
   <!-- ヘッダファイル -->
@@ -144,6 +156,15 @@
     </ClInclude>
     <ClInclude Include="Game\TitleScene\MojiWave.h">
       <Filter>Game\TitleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\Player\Player.h">
+      <Filter>Game\object\player</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Collsion\Collision.h">
+      <Filter>ライブラリ\MyLibrary\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\MyLibrarys\InputKey.h">
+      <Filter>ライブラリ\MyLibrary</Filter>
     </ClInclude>
   </ItemGroup>
   <!-- リソースファイル -->

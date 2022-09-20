@@ -88,6 +88,8 @@
   </ItemDefinitionGroup>
   <!-- ソースファイル -->
   <ItemGroup>
+    <ClCompile Include="Game\Collsion\Collision.cpp" />
+    <ClCompile Include="Game\Object\Player\Player.cpp" />
     <ClCompile Include="Game\PlayScene\PlayScene.cpp" />
     <ClCompile Include="Game\TitleScene\MojiWave.cpp" />
     <ClCompile Include="Game\TitleScene\TitleRogo.cpp" />
@@ -105,7 +107,9 @@
   </ItemGroup>
   <!-- ヘッダファイル -->
   <ItemGroup>
+    <ClInclude Include="Game\Collsion\Collision.h" />
     <ClInclude Include="Game\IScene.h" />
+    <ClInclude Include="Game\Object\Player\Player.h" />
     <ClInclude Include="Game\PlayScene\PlayScene.h" />
     <ClInclude Include="Game\TitleScene\MojiWave.h" />
     <ClInclude Include="Game\TitleScene\TitleRogo.h">
@@ -123,6 +127,7 @@
     <ClInclude Include="Libraries\GameLibrary\GameLibTime.h" />
     <ClInclude Include="Libraries\GameLibrary\GameLib.h" />
     <ClInclude Include="Libraries\MyLibrarys\Button.h" />
+    <ClInclude Include="Libraries\MyLibrarys\InputKey.h" />
     <ClInclude Include="Libraries\Utilities\MemoryLeakDetector.h" />
     <ClInclude Include="Game\GameMain.h" />
   </ItemGroup>

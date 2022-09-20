@@ -8,10 +8,13 @@
 #pragma once
 
 #include "../IScene.h"
-
+class Player;
 class PlayScene : public IScene
 {
 private:
+	// ÉvÉåÉCÉÑÅ[
+	Player* mpPlayer;
+
 
 public:
 
@@ -26,4 +29,7 @@ public:
 	void Draw() override;
 
 	void Finalize() override;
+private:
+
+	void DeletePoint();
 };
