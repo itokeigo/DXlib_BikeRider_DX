@@ -166,10 +166,10 @@
     <ClInclude Include="Game\Collsion\Collision.h">
       <Filter>ライブラリ\MyLibrary\Collision</Filter>
     </ClInclude>
-    <ClInclude Include="Libraries\MyLibrarys\InputKey.h">
-      <Filter>ライブラリ\MyLibrary</Filter>
-    </ClInclude>
     <ClInclude Include="Game\BackGround.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameData.h">
       <Filter>Game</Filter>
     </ClInclude>
   </ItemGroup>
