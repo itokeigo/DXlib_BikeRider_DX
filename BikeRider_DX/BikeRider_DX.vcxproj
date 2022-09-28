@@ -98,6 +98,7 @@
     <ClCompile Include="Libraries\GameLibrary\GameLibFade.cpp" />
     <ClCompile Include="Libraries\GameLibrary\GameLibSprite.cpp" />
     <ClCompile Include="Libraries\MyLibrarys\Button.cpp" />
+    <ClCompile Include="Libraries\MyLibrarys\CountDown.cpp" />
     <ClCompile Include="WinMain.cpp" />
     <ClCompile Include="Libraries\GameLibrary\GameLibGraphics.cpp" />
     <ClCompile Include="Libraries\GameLibrary\GameLibInput.cpp" />
@@ -130,6 +131,10 @@
     <ClInclude Include="Libraries\GameLibrary\GameLibTime.h" />
     <ClInclude Include="Libraries\GameLibrary\GameLib.h" />
     <ClInclude Include="Libraries\MyLibrarys\Button.h" />
+    <ClInclude Include="Libraries\MyLibrarys\CountDown.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="Libraries\Utilities\MemoryLeakDetector.h" />
     <ClInclude Include="Game\GameMain.h" />
   </ItemGroup>

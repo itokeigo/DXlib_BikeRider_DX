@@ -5,6 +5,7 @@
 
 
 #include"../Libraries/MyLibrarys/Button.h"
+#include"../../Libraries/MyLibrarys/CountDown.h"
 #include"TitleRogo.h"
 
 TitleScene::TitleScene()
@@ -24,6 +25,8 @@ void TitleScene::Initialize()
 
 	mpRogo = new TitleRogo("Resources//Textures//TITLE//TitleRogo.png");
 	mpRogo->Initialize();
+	mCount = new CountDown();
+	mCount->Initialize();
 }
 
 GAME_SCENE TitleScene::Update()
@@ -34,7 +37,6 @@ GAME_SCENE TitleScene::Update()
 		{
 			// ゲームシーンへ移行
 			return GAME_SCENE::PLAY;
-
 		}
 
 		if (mpButton[eButtonName::ExitButton]->ChackeButton() == Button::BUTTON_STATE::BUTTON_RELEASE)
@@ -42,6 +44,8 @@ GAME_SCENE TitleScene::Update()
 			// ゲーム終了ボタンを押した際の処理
 			DxLib_End();
 		}
+
+		mCount->Update();
 	}
 	return GAME_SCENE::NONE;
 }
@@ -53,6 +57,7 @@ void TitleScene::Draw()
 
 	mpButton[eButtonName::ExitButton]->Render(GetColor(255, 0, 0), true, GetColor(255, 255, 255));
 	mpRogo->Render();
+	mCount->Render();
 }
 
 void TitleScene::Finalize()

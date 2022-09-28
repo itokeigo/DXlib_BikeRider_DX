@@ -11,12 +11,22 @@ struct SpriteData
 
 	struct float2
 	{
+		float2(float sx = 0, float sy = 0)
+		{
+			x = sx;
+			y = sy;
+		}
 		float x;
 		float y;
 	};
 
 	struct int2
 	{
+		int2(int sx = 0, int sy = 0)
+		{
+			x = sx;
+			y = sy;
+		}
 		int x;
 		int y;
 	};

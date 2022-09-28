@@ -9,6 +9,7 @@
 
 #include "../IScene.h"
 
+class CountDown;
 class Button;
 class TitleRogo;
 class TitleScene : public IScene
@@ -23,6 +24,8 @@ private:
 
 	Button* mpButton[eButtonName::Num];
 	TitleRogo* mpRogo;
+
+	CountDown* mCount;
 public:
 
 	TitleScene();
